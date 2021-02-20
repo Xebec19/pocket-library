@@ -1,7 +1,7 @@
 import React from 'react';
 import 'tachyons';
 
-const Register = () => {
+function Register() {
   return (
     <div className='tc bg-white dib br3 pa3 ma2 grow bw shadow-5'>
       
@@ -14,13 +14,13 @@ const Register = () => {
 		className="ba b--transparent ph0 mh0">
 		<legend 
 		className="f4 fw6 ph0 mh0">
-		Sign In
+		Sign Up
 		</legend>
 		<div 
 		className="mt3">
 		<label 
 		className="db fw6 lh-copy f6" 
-		for="email-address">
+		htmlFor="email-address">
 			Email
 		</label>
 		<input 
@@ -33,7 +33,7 @@ const Register = () => {
 		className="mv3">
 		<label 
 		className="db fw6 lh-copy f6" 
-		for="password">
+		htmlFor="password">
 			Password
 		</label>
 		<input 
@@ -60,11 +60,11 @@ const Register = () => {
 		className="f6 link dim black db">
 		Sign up
 		</a>
-		<a 
-		href="#0" 
+		<p 
+		onClick={() => this.props.set('old')}
 		className="f6 link dim black db">
-		Forgot your password?
-		</a>
+		Already have an account ?
+		</p>
 		</div>
 		</form>
 		</main>

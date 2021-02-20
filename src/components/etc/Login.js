@@ -1,7 +1,7 @@
 import React from 'react';
 import 'tachyons';
 
-const Login = () => {
+function Login(props) {
   return (
     <div className='tc bg-white dib br3 pa3 ma2 grow bw shadow-5'>
       
@@ -20,7 +20,7 @@ const Login = () => {
 		className="mt3">
 		<label 
 		className="db fw6 lh-copy f6" 
-		for="email-address">
+		htmlFor="email-address">
 			Email
 		</label>
 		<input 
@@ -33,7 +33,7 @@ const Login = () => {
 		className="mv3">
 		<label 
 		className="db fw6 lh-copy f6" 
-		for="password">
+		htmlFor="password">
 			Password
 		</label>
 		<input 
@@ -55,16 +55,13 @@ const Login = () => {
 		</div>
 		<div 
 		className="lh-copy mt3">
-		<a 
-		href="#0" 
+		<p
+		style={{cursor:'pointer'}} 
+		
+		onClick = {() => this.props.set('old')}
 		className="f6 link dim black db">
-		Sign up
-		</a>
-		<a 
-		href="#0" 
-		className="f6 link dim black db">
-		Forgot your password?
-		</a>
+		Need an account ?
+		</p>
 		</div>
 		</form>
 		</main>

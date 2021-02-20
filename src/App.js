@@ -9,7 +9,7 @@ import Books from './components/pages/Books';
 import Profile from './components/pages/Profile';
 import './App.css';
 
-const App = () => {
+function App () {
 return (
 <div className="App">
   <Router>
