@@ -3,8 +3,9 @@ import 'tachyons';
 
 function Login(props) {
   return (
+
     <div className='tc bg-white dib br3 pa3 ma2 grow bw shadow-5'>
-      
+    	{console.log(props.user)}  
 		<main 
 		className="pa4 black-80">
 		<form 

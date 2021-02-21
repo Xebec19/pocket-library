@@ -11,10 +11,10 @@ const Hero = () => {
 	}
 	let form;
 	if(user === 'old') 
-		form = <Login setUser={() => this.set}/>;
+		form = <Login setUser={() => this.set} User={user}/>;
 	if(user === 'new') 
-		form = <Register setUser={() => this.set}/>;
-	const bgImg = {
+		form = <Register setUser={() => this.set} User={user}/>;
+	const bgImg = {  //this holds the url and settings of background image
 		backgroundImage: 'url(https://images.unsplash.com/photo-1507842217343-583bb7270b66?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1153&q=80)',
 		backgroundRepeat: 'no-repeat',
   		backgroundPosition: 'center',
