@@ -1,11 +1,13 @@
 import React from 'react';
+import {
+Link
+} from "react-router-dom";
 import 'tachyons';
 
 function Login(props) {
   return (
 
     <div className='tc bg-white dib br3 pa3 ma2 grow bw shadow-5'>
-    	{console.log(props.user)}  
 		<main 
 		className="pa4 black-80">
 		<form 
@@ -56,13 +58,12 @@ function Login(props) {
 		</div>
 		<div 
 		className="lh-copy mt3">
-		<p
+		<Link
 		style={{cursor:'pointer'}} 
-		
-		onClick = {() => this.props.set('old')}
+		to='register'
 		className="f6 link dim black db">
 		Need an account ?
-		</p>
+		</Link>
 		</div>
 		</form>
 		</main>

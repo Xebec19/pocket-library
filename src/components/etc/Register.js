@@ -1,7 +1,10 @@
 import React from 'react';
+import {
+Link
+} from "react-router-dom";
 import 'tachyons';
 
-function Register() {
+function Register(props) {
   return (
     <div className='tc bg-white dib br3 pa3 ma2 grow bw shadow-5'>
       
@@ -55,16 +58,12 @@ function Register() {
 		</div>
 		<div 
 		className="lh-copy mt3">
-		<a 
-		href="#0" 
-		className="f6 link dim black db">
-		Sign up
-		</a>
-		<p 
-		onClick={() => this.props.set('old')}
+		<Link
+		style={{cursor:'pointer'}} 
+		to='/'
 		className="f6 link dim black db">
 		Already have an account ?
-		</p>
+		</Link>
 		</div>
 		</form>
 		</main>
